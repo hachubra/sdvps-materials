@@ -1,4 +1,4 @@
-# Домашнее задание к занятию «Что такое DevOps. СI/СD»
+# Домашнее задание к занятию «Что такое DevOps. СI/СD» - Solovev Alexander
 
 ### Инструкция по выполнению домашнего задания
 
@@ -47,6 +47,14 @@
 2. Перепишите сборку из задания 1 на declarative в виде кода.
 
 В качестве ответа пришлите скриншоты с настройками проекта и результатами выполнения сборки.
+
+---
+
+### Reshenie 2
+
+![screenshot1](https://github.com/hachubra/sdvps-materials/blob/main/images/4.png)
+![screenshot2](https://github.com/hachubra/sdvps-materials/blob/main/images/5.png)
+![screenshot3](https://github.com/hachubra/sdvps-materials/blob/main/images/6.png)
 
 ---
 
