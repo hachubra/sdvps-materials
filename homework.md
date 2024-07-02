@@ -70,6 +70,16 @@
 В качестве ответа пришлите скриншоты с настройками проекта и результатами выполнения сборки.
 
 ---
+
+
+### Reshenie 3
+
+![screenshot1](https://github.com/hachubra/sdvps-materials/blob/main/images/7.png)
+![screenshot2](https://github.com/hachubra/sdvps-materials/blob/main/images/8.png)
+![screenshot3](https://github.com/hachubra/sdvps-materials/blob/main/images/9.png)
+
+---
+
 ## Дополнительные задания* (со звёздочкой)
 
 Их выполнение необязательное и не влияет на получение зачёта по домашнему заданию. Можете их решить, если хотите лучше разобраться в материале.
