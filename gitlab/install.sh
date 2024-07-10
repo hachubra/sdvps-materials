@@ -54,6 +54,6 @@ sudo    docker run -d --name gitlab-runner --restart always \
      -v /srv/gitlab-runner/config:/etc/gitlab-runner \
      -v /var/run/docker.sock:/var/run/docker.sock \
      gitlab/gitlab-runner:latest
-
-
+git clone https://github.com/hachubra/sdvps-materials.git
+git remote add project1 http://gitlab.localdomain/group1/project1.git
 
