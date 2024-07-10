@@ -35,3 +35,25 @@ docker pull docker:latest
 
 192.168.123.10
 
+
+   docker run -ti --rm --name gitlab-runner \
+     --network host \
+     -v /srv/gitlab-runner/config:/etc/gitlab-runner \
+     -v /var/run/docker.sock:/var/run/docker.sock \
+     gitlab/gitlab-runner:latest register
+
+sudo nano /srv/gitlab-runner/config/config.toml 
+
+#Конфигурация раннера для docker-in-docker:
+
+    volumes = ["/cache", "/var/run/docker.sock:/var/run/docker.sock"]
+    extra_hosts = ["gitlab.localdomain:192.168.123.10"]
+
+sudo    docker run -d --name gitlab-runner --restart always \
+     --network host \
+     -v /srv/gitlab-runner/config:/etc/gitlab-runner \
+     -v /var/run/docker.sock:/var/run/docker.sock \
+     gitlab/gitlab-runner:latest
+
+
+
