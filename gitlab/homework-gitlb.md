@@ -32,7 +32,10 @@
 
 ### Reshenie 1
 
- 
+![screenshot1](https://github.com/hachubra/sdvps-materials/blob/main/images/11.png)
+![screenshot2](https://github.com/hachubra/sdvps-materials/blob/main/images/12.png)
+![screenshot3](https://github.com/hachubra/sdvps-materials/blob/main/images/14.png)
+
 ---
 
 ### Задание 2
@@ -51,7 +54,45 @@
 
 ### Reshenie 2
 
- 
+```
+
+stages:
+  - test
+  - build
+
+test:
+  stage: test
+  image: golang:1.17
+  script:
+   - go test .
+  tags:
+   - runner-1
+
+static-analysis:
+ stage: test
+ image:
+  name: sonarsource/sonar-scanner-cli
+  entrypoint: [""]
+ variables:
+ script:
+  - sonar-scanner -Dsonar.projectKey=project1 -Dsonar.sources=. -Dsonar.host.url=http://gitlab.localdomain:9000 -Dsonar.login=sqp_72a7e423421ad40839524494305328c776d0da0e
+ tags:
+   - runner-1
+
+build:
+  stage: build
+  image: docker:latest
+  script:
+   - docker build .
+  tags:
+   - runner-1
+
+
+```
+
+![screenshot1](https://github.com/hachubra/sdvps-materials/blob/main/images/15.png)
+![screenshot2](https://github.com/hachubra/sdvps-materials/blob/main/images/16.png)
+
 ---
 
 ## Дополнительные задания* (со звёздочкой)

@@ -59,8 +59,10 @@ git remote add project1 http://gitlab.localdomain/group1/project1.git
 
 #sonarqube
 cd ~/projects/my_project1/gitlab
-
+sudo sysctl vm.max_map_count=262144
 #install docker compose
+
+
 
 mkdir -p ~/.docker/cli-plugins/
 curl -SL https://github.com/docker/compose/releases/download/v2.3.3/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
