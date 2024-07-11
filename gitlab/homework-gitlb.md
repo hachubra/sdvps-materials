@@ -114,7 +114,7 @@ build:
 
 ### Reshenie 3*
 
- ![screenshot1](https://github.com/hachubra/sdvps-materials/blob/main/images/15.png)
+ ![screenshot1](https://github.com/hachubra/sdvps-materials/blob/main/images/17.png)
 
 
 ```
