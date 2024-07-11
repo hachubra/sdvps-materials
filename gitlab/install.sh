@@ -57,3 +57,15 @@ sudo    docker run -d --name gitlab-runner --restart always \
 git clone https://github.com/hachubra/sdvps-materials.git my_project1
 git remote add project1 http://gitlab.localdomain/group1/project1.git
 
+#sonarqube
+cd ~/projects/my_project1/gitlab
+
+#install docker compose
+
+mkdir -p ~/.docker/cli-plugins/
+curl -SL https://github.com/docker/compose/releases/download/v2.3.3/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
+chmod +x ~/.docker/cli-plugins/docker-compose
+docker compose version
+
+cd ~/projects/my_project1/gitlab
+docker compose up -d
