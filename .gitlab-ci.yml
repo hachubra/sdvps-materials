@@ -1,9 +1,13 @@
 stages:
-  - test
   - build
+  - test
+
 
 test:
   stage: test
+  only:
+    changes:
+    - "*.go"
   image: golang:1.17
   script:
    - go test .
@@ -12,6 +16,9 @@ test:
 
 static-analysis:
  stage: test
+ only:
+  changes:
+  - "*.go"
  image:
   name: sonarsource/sonar-scanner-cli
   entrypoint: [""]
